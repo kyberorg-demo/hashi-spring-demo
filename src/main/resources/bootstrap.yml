@@ -1,0 +1,9 @@
+spring.cloud.consul:
+  host: denotsl2456.int.kn
+  port: 8500
+  config:
+    enabled: true
+  discovery:
+    instance-id: ${spring.application.name}
+    healthCheckPath: /my-health
+    healthCheckInterval: 20s
